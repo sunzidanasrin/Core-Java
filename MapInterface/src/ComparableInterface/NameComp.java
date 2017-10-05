@@ -1,14 +1,12 @@
-
 package ComparableInterface;
 
 import java.util.*;
 
-
-public class NameComp implements Comparator{
+public class NameComp implements Comparator<Student> {
 
     @Override
-    public int compare(Object o1, Object o2) {
-        return
-                (((Student)o1).firstName.compareTo(((Student)o2).firstName)) ;  }
-    
+    public int compare(Student o1, Student o2) {
+        return (o1.firstName.compareTo(o2.firstName));
+    }
+
 }
